@@ -1,22 +1,22 @@
-# 🍃 MongoDB & NoSQL Essentials
+#  MongoDB & NoSQL Essentials
 
 A comprehensive guide to understanding NoSQL databases, the transition from SQL, and core MongoDB operations.
 
 ---
 
-## 📊 The Data Landscape
+##  The Data Landscape
 Data exists in three primary forms:
 1. **Structured:** Organized in tables with fixed schemas (SQL).
 2. **Unstructured:** Raw data, such as logs or metadata.
 3. **Semi-structured:** Flexible formats like **JSON**, **BSON**, and **XML**.
 
-### 🛑 Problems with MySQL (SQL)
+###  Problems with MySQL (SQL)
 * **Predefined Schema:** Every row must have the exact same columns and data types.
 * **NULL Hell:** Optional form fields lead to sparse tables filled with `NULL` entries, wasting storage and complicating logic.
 
 ---
 
-## 🚀 NoSQL Overview
+##  NoSQL Overview
 **NoSQL** stands for "Not Only SQL." These databases are schema-free and don't rely on traditional tables.
 
 ### Types of NoSQL Databases
@@ -27,7 +27,7 @@ Data exists in three primary forms:
 | **Graph-Based** | Neo4j |
 | **Document-Oriented** | **MongoDB** |
 
-### 🕒 Database Evolution
+###  Database Evolution
 * **2000:** Graph Databases
 * **2004:** Google BigTable
 * **2007:** Amazon Dynamo
@@ -36,12 +36,12 @@ Data exists in three primary forms:
 
 ---
 
-## 🍃 MongoDB Core Concepts
+##  MongoDB Core Concepts
 * **Hierarchy:** Database ➔ Collections ➔ Documents.
 * **Documents:** Similar to JSON objects; each can have a varying number of fields.
 * **Deployment:** Use **Atlas** for cloud and **Compass** for local GUI management.
 
-### 🛠️ Collection Management
+###  Collection Management
 - **Enter Shell:** `mongosh`
 - **Create/Switch DB:** `use db_name`
 - **Create Collection:** `db.createCollection("collectionName")`
@@ -55,7 +55,7 @@ Used for high-speed logging where you only need the most recent data.
 
 ---
 
-## 📝 CRUD Operations
+##  CRUD Operations
 
 ### 1. Create (Insert)
 ```javascript
