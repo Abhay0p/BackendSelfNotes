@@ -95,3 +95,14 @@ db.logs.updateOne({ status: "failed" }, { $set: { code: 403 } });
 // Update all matches
 db.logs.updateMany({ status: "failed" }, { $set: { code: 404 } });
 ```
+### 4. Delete 
+```javascript
+// Delete first match
+db.logs.deleteOne({ status: "failed" });
+
+// Delete all matches
+db.logs.deleteMany({ status: "failed" });
+
+// Wipe entire collection
+db.logs.deleteMany({});
+```
