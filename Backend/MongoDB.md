@@ -85,3 +85,13 @@ db.logs.find({ status: "failed" }, { event: 1, _id: 0 });
 
 // Count documents
 db.logs.countDocuments();
+```
+
+### 3. Update 
+```javascript
+// Update first match
+db.logs.updateOne({ status: "failed" }, { $set: { code: 403 } });
+
+// Update all matches
+db.logs.updateMany({ status: "failed" }, { $set: { code: 404 } });
+```
