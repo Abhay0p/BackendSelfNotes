@@ -71,3 +71,17 @@ db.students.insertMany([
     { name: "Jane Smith", age: 20 },
     { name: "Mike Johnson", gpa: 3.8 }
 ]);
+
+### 2. Read (Fetch)
+```javascript
+// Fetch all documents
+db.collection.find();
+
+// Fetch first match
+db.collection.findOne({ name: "John Doe" });
+
+// Projection (Filter fields: 1 to show, 0 to hide)
+db.logs.find({ status: "failed" }, { event: 1, _id: 0 });
+
+// Count documents
+db.logs.countDocuments();
