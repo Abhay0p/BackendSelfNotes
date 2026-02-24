@@ -71,7 +71,7 @@ db.students.insertMany([
     { name: "Jane Smith", age: 20 },
     { name: "Mike Johnson", gpa: 3.8 }
 ]);
-
+```
 ### 2. Read (Fetch)
 ```javascript
 // Fetch all documents
